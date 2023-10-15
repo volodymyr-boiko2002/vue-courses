@@ -9,7 +9,12 @@
 
 <script>
 export default {
-  props: ['categories'],
+  props: {
+    categories:{
+      type: Array,
+      default: () => []
+    }
+  },
 }
 </script>
 
